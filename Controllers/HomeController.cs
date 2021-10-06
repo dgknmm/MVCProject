@@ -8,14 +8,18 @@ namespace shopapp.webui.Controllers
 {
     public class HomeController:Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "home/Index";
+            return View();
         }
 
-        public string About()
+        public IActionResult About()
         {
-            return "home/About";
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View("MyView");
         }
     }
 }

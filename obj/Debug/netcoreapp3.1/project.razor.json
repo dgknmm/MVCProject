@@ -14400,6 +14400,37 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "shopapp.webui",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Home\\MyView.cshtml",
+      "TargetPath": "Views\\Home\\MyView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Product\\Details.cshtml",
+      "TargetPath": "Views\\Product\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Product\\Index.cshtml",
+      "TargetPath": "Views\\Product\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Product\\List.cshtml",
+      "TargetPath": "Views\\Product\\List.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
