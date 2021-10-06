@@ -8,14 +8,19 @@ namespace shopapp.webui.Controllers
 {
     public class ProductController:Controller
     {
+        public string Index()
+        {
+            return "product/Index";
+        }
+
         public string List()
         {
             return "product/list";
         }
 
-        public string Details()
+        public string Details(int id)
         {
-            return "product/Details";
+            return "product/Details"+id;
         }
     }
 }
