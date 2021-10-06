@@ -10,6 +10,11 @@ namespace shopapp.webui.Controllers
     {
         public IActionResult Index()
         {
+            int saat=DateTime.Now.Hour;
+            
+            ViewBag.Greeting = saat>12?"iyi günler":"Günaydın";
+            ViewBag.User = "Doğukan";
+
             return View();
         }
 

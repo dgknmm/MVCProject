@@ -34,3 +34,4 @@ D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.cspro
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
