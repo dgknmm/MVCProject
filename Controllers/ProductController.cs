@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using shopapp.webui.Models;
 
 namespace shopapp.webui.Controllers
 {
@@ -18,9 +19,17 @@ namespace shopapp.webui.Controllers
             return "product/list";
         }
 
-        public string Details(int id)
+        public IActionResult Details(int id)
         {
-            return "product/Details"+id;
+            // ViewBag.Name = "samsung s6";
+            // ViewBag.Price = 3000;
+            // ViewBag.Detail = "telefon";
+            
+            var p = new Product();
+            p.Name = "samsung s6";
+            p.Price = 3000;
+            p.Description = "telefon";
+            return View(p);
         }
     }
 }
