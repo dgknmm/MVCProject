@@ -35,3 +35,4 @@ D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

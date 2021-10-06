@@ -7,11 +7,15 @@ using shopapp.webui.Models;
 
 namespace shopapp.webui.Controllers
 {
-    public class ProductController:Controller
+    public class ProductController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "product/Index";
+            var product = new Product { Name = "Iphone x", Price = 6000, Description = "telefon" };
+            ViewData["Category"]="Telefonlar";
+            ViewData["Product"]=product;
+
+            return View();
         }
 
         public string List()
@@ -24,7 +28,7 @@ namespace shopapp.webui.Controllers
             // ViewBag.Name = "samsung s6";
             // ViewBag.Price = 3000;
             // ViewBag.Detail = "telefon";
-            
+
             var p = new Product();
             p.Name = "samsung s6";
             p.Price = 3000;
