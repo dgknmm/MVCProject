@@ -14407,8 +14407,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\_header.cshtml",
+      "TargetPath": "Views\\Shared\\_header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Product\\Details.cshtml",
       "TargetPath": "Views\\Product\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\_noproduct.cshtml",
+      "TargetPath": "Views\\Shared\\_noproduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\_navbar.cshtml",
+      "TargetPath": "Views\\Shared\\_navbar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,6 +14434,11 @@
     {
       "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\_product.cshtml",
+      "TargetPath": "Views\\Shared\\_product.cshtml",
       "FileKind": "mvc"
     },
     {

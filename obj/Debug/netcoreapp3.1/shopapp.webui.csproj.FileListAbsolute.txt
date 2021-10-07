@@ -36,3 +36,7 @@ D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
 D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_navbar.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_header.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_noproduct.cshtml.g.cs
+D:\Uygulamalar\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_product.cshtml.g.cs
