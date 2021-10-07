@@ -20,7 +20,7 @@ namespace shopapp.webui.Controllers
 
         public IActionResult List()
         {
-            var category = new Category { Name = "Telefonlar", Description = "Telefon Kategorisi" };
+            
 
 
             var products = new List<Product>()
@@ -33,7 +33,6 @@ namespace shopapp.webui.Controllers
 
             var productViewModel = new ProductViewmodel()
             {
-                Category = category,
                 Products = products
             };
             return View(productViewModel);

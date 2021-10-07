@@ -14402,8 +14402,18 @@
   "RootNamespace": "shopapp.webui",
   "Documents": [
     {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\_categories.cshtml",
+      "TargetPath": "Views\\Shared\\_categories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Home\\MyView.cshtml",
       "TargetPath": "Views\\Home\\MyView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Uygulamalar\\shopapp\\shopapp.webui\\Views\\Shared\\ViewComponents\\Categories\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\ViewComponents\\Categories\\Default.cshtml",
       "FileKind": "mvc"
     },
     {

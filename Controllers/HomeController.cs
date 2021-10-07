@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using shopapp.webui.Models;
 
 namespace shopapp.webui.Controllers
 {
@@ -10,12 +11,20 @@ namespace shopapp.webui.Controllers
     {
         public IActionResult Index()
         {
-            int saat=DateTime.Now.Hour;
-            
-            ViewBag.Greeting = saat>12?"iyi günler":"Günaydın";
-            ViewBag.User = "Doğukan";
+  
+            var products = new List<Product>()
+            {
+                new Product { Name = "Iphone 6", Price = 4000, Description = "iyi telefon" },
+                new Product { Name = "Iphone 7", Price = 5000, Description = "telefon" ,isApproved=true},
+                new Product { Name = "Iphone x", Price = 6000, Description = "telefon" },
+                new Product { Name = "Iphone 11", Price = 7000, Description = "telefon",isApproved=true }
+            };
 
-            return View();
+            var productViewModel = new ProductViewmodel()
+            {
+                Products = products
+            };
+            return View(productViewModel);
         }
 
         public IActionResult About()
