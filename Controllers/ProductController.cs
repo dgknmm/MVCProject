@@ -12,27 +12,29 @@ namespace shopapp.webui.Controllers
         public IActionResult Index()
         {
             var product = new Product { Name = "Iphone x", Price = 6000, Description = "telefon" };
-            ViewData["Category"]="Telefonlar";
-            ViewData["Product"]=product;
+            ViewData["Category"] = "Telefonlar";
+            ViewData["Product"] = product;
 
             return View();
         }
 
         public IActionResult List()
         {
-            var category = new Category {Name="Telefonlar",Description="Telefon Kategorisi"};
-            
-            
+            var category = new Category { Name = "Telefonlar", Description = "Telefon Kategorisi" };
+
+
             var products = new List<Product>()
             {
-                new Product { Name = "Iphone 8", Price = 4000, Description = "iyi telefon" },
-                new Product { Name = "Iphone x", Price = 6000, Description = "telefon" }
+                new Product { Name = "Iphone 6", Price = 4000, Description = "iyi telefon" },
+                new Product { Name = "Iphone 7", Price = 5000, Description = "telefon" ,isApproved=true},
+                new Product { Name = "Iphone x", Price = 6000, Description = "telefon" },
+                new Product { Name = "Iphone 11", Price = 7000, Description = "telefon",isApproved=true }
             };
 
             var productViewModel = new ProductViewmodel()
             {
-                Category= category,
-                Products= products
+                Category = category,
+                Products = products
             };
             return View(productViewModel);
         }

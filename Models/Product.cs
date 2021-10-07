@@ -10,5 +10,6 @@ namespace shopapp.webui.Models
         public string Name { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
+        public bool isApproved { get; set; }
     }
 }
