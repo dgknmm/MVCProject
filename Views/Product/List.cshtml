@@ -16,6 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         .popular {
             color: green;
@@ -25,38 +27,72 @@
 </head>
 
 <body>
-    <h1 class="@popularClass">@categoryName</h1>
-    @if (products.Count == 0)
-    {
-        <p style="color:red">Listelenecek ürün bulunamadı.</p>
-    }
-    else
-    {
-        <ul>
-            @foreach (var product in products)
+    <div class="navbar bg-primary navbar-dark navbar-expand-sm">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Shop APP</h1>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis facere dolores
+                    obcaecati porro aspernatur quibusdam similique placeat velit in libero laudantium autem numquam
+                    optio possimus omnis odit, eos aliquid saepe.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="@popularClass">@categoryName</h1>
+                </div>
+            </div>
+
+            @if (products.Count == 0)
             {
-                if (product.isApproved)
-                {
-                    <li>
-                        <div>
-                            <p>@product.Name</p>
-                            <p>@product.Price</p>
-                            <p>@product.Description</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger">
+                            Listelenecek ürün bulunamadı.
                         </div>
-                    </li>
-                }
-                else
-                {
-                    <li style="background-color: red;">
-                        <p>@product.Name</p>
-                        <p>Ürün satışta değil.</p>
-                    </li>
-                }
+                    </div>
 
+                </div>
             }
-        </ul>
-    }
-
+            else
+            {
+                <div class="row">
+                    @foreach (var product in products)
+                    {
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-red-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1604343703000"
+                            alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">@product.Name</h5>
+                                    <p class="card-text">@product.Description</p>
+                                    <a href="" class="btn btn-primary">İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </main>
 </body>
 
 </html>
