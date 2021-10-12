@@ -1,11 +1,12 @@
 @model ProductViewmodel
 
-@* 
- ViewStart içerisinde tüm sayfalar Layoutu kullanmasına rağmen istediğimiz sayfada kullanmasına engel olmak için Layout değerine null atayabiliriz.
- Ya da farklı bir Layout sayfaası atayarak o Layout'u kullanmasını sağlayabiliriz.
-@{
+@*
+    ViewStart içerisinde tüm sayfalar Layoutu kullanmasına rağmen istediğimiz sayfada kullanmasına engel olmak için Layout
+    değerine null atayabiliriz.
+    Ya da farklı bir Layout sayfaası atayarak o Layout'u kullanmasını sağlayabiliriz.
+    @{
     Layout=null;
-} 
+    }
 *@
 
 @{
@@ -15,28 +16,34 @@
     var products = Model.Products;
 }
 
-    <div class="row">
-        <div class="col-md-2">
-            @* Kategoriler gelecek *@
-            @await Component.InvokeAsync("Categories")
-        </div>
-        <div class="col-md-10">
-            @* Ürünler gelecek *@
+@section MessageBox{
+<div class="alert alert-warning text-center m-0">
+    Bir mesajınız var.
+</div>
+}
+@section Scripts
+{
 
-            @if (products.Count == 0)
-            {
-                @await Html.PartialAsync("_noproduct")
-            }
-            else
-            {
-                <div class="row">
-                    @foreach (var product in products)
-                    {
-                        <div class="col-md-3">
-                            @await Html.PartialAsync("_product",product)
-                        </div>
-                    }
-                </div>
-            }
-        </div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+}
+
+@if (products.Count == 0)
+{
+    @await Html.PartialAsync("_noproduct")
+}
+else
+{
+    <div class="row">
+        @foreach (var product in products)
+        {
+            <div class="col-md-3">
+                @await Html.PartialAsync("_product",product)
+            </div>
+        }
     </div>
+}
